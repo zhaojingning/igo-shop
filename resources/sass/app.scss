@@ -24,7 +24,17 @@ body {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 40px;
   margin-top: 0px;
+
+  .container {
+
+  	.navbar-collapse {
+      justify-content: space-between;
+  	}
+  	
+  }
 }
+
+
 
 /* Sticky footer styles */
 html {

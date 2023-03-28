@@ -10835,6 +10835,9 @@ body {
   margin-bottom: 40px;
   margin-top: 0px;
 }
+.navbar-static-top .container .navbar-collapse {
+  justify-content: space-between;
+}
 
 /* Sticky footer styles */
 html {
