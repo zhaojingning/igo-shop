@@ -8,4 +8,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+// 启用邮箱验证相关的路由（验证邮箱页面，重发验证邮件页面等）
+Auth::routes(['verify' => true]);
