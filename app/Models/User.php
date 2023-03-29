@@ -10,9 +10,12 @@ use Laravel\Sanctum\HasApiTokens;
 
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 
+use Encore\Admin\Traits\DefaultDatetimeFormat;
+
 class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable, MustVerifyEmailTrait;
+    use DefaultDatetimeFormat;
 
     /**
      * The attributes that are mass assignable.
