@@ -6,8 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "codingyu/ueditor": "^2.0",
         "encore/laravel-admin": "1.8.11",
         "guzzlehttp/guzzle": "^7.2",
+        "jxlwqq/quill": "^1.0",
+        "laravel-admin-ext/wang-editor": "1.*",
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",

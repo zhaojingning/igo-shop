@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dccb5d696741ac301780d49adcb827fc",
+    "content-hash": "616671070dae9f3a0b168b0490f8ff8e",
     "packages": [
         {
             "name": "brick/math",
@@ -55,6 +55,59 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "codingyu/ueditor",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/UEditor.git",
+                "reference": "dee1c61ec519e38a7d930302aeeda93e7fcfce3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.huaweicloud.com/repository/php/codingyu/ueditor/2.0.2/codingyu-ueditor-2.0.2.zip",
+                "reference": "dee1c61ec519e38a7d930302aeeda93e7fcfce3d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "overtrue/laravel-ueditor": "~1.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codingyu\\Ueditor\\UeditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codingyu\\Ueditor\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codingyu",
+                    "email": "everceyu@gmail.com"
+                }
+            ],
+            "description": "UEditor extension for laravel-admin",
+            "homepage": "https://github.com/codingyu/UEditor",
+            "keywords": [
+                "extension",
+                "laravel-admin",
+                "ueditor"
+            ],
+            "time": "2019-07-28T02:10:30+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1305,6 +1358,109 @@
                 }
             ],
             "time": "2021-10-07T12:57:01+00:00"
+        },
+        {
+            "name": "jxlwqq/quill",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/quill.git",
+                "reference": "be5ab91840f25dfee4db0ea5c408943930912645"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.huaweicloud.com/repository/php/jxlwqq/quill/1.0.4/jxlwqq-quill-1.0.4.zip",
+                "reference": "be5ab91840f25dfee4db0ea5c408943930912645",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\Quill\\QuillServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\Quill\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "quill editor for laravel-admin",
+            "homepage": "https://github.com/jxlwqq/quill",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2021-12-15T10:49:17+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/wang-editor",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/wangEditor.git",
+                "reference": "d80ad518176fdd7b4d8a03ff4e779fb56ceb3d52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.huaweicloud.com/repository/php/laravel-admin-ext/wang-editor/v1.2.1/laravel-admin-ext-wang-editor-v1.2.1.zip",
+                "reference": "d80ad518176fdd7b4d8a03ff4e779fb56ceb3d52",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": ">=1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\WangEditor\\WangEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\WangEditor\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "wangEditor extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/wangEditor",
+            "keywords": [
+                "editor",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2020-09-14T06:23:17+00:00"
         },
         {
             "name": "laravel-lang/lang",
@@ -2584,6 +2740,52 @@
             ],
             "abandoned": true,
             "time": "2022-06-18T12:46:29+00:00"
+        },
+        {
+            "name": "overtrue/laravel-ueditor",
+            "version": "1.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-ueditor.git",
+                "reference": "f73f6399a21ab8c6635e492b7b5a28caaafa4127"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.huaweicloud.com/repository/php/overtrue/laravel-ueditor/1.2.10/overtrue-laravel-ueditor-1.2.10.zip",
+                "reference": "f73f6399a21ab8c6635e492b7b5a28caaafa4127",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.10"
+            },
+            "suggest": {
+                "overtrue/laravel-filesystem-qiniu": "如果你想要使用七牛云存储，也许你需要安装它哦~"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelUEditor\\UEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelUEditor\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "UEditor integration for Laravel.",
+            "abandoned": true,
+            "time": "2018-12-22T07:40:09+00:00"
         },
         {
             "name": "phpoption/phpoption",
