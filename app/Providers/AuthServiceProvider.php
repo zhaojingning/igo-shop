@@ -31,6 +31,6 @@ class AuthServiceProvider extends ServiceProvider
            // class_name 是Laravel提供的辅助函数，可以获取类的简短名称
             // 例如 传入 \app\models\user 会返回user
             return '\\App\\Policies\\'.class_basename($class).'Policy';
-        })
+        });
     }
 }
