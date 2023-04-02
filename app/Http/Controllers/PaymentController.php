@@ -8,6 +8,8 @@ use App\Exceptions\InvalidRequestException;
 use Carbon\Carbon;
 use Endroid\QrCode\QrCode;
 
+use App\Event\OrderPaid;
+
 class PaymentController extends Controller
 {
     public function payByAlipay(Order $order, Request $request)
@@ -69,6 +71,8 @@ class PaymentController extends Controller
         
     }
 
+    $this->afterPaid($order);
+
     public function payByWechat(Order $order, Request $request)
     {
         // 校验权限
@@ -111,6 +115,14 @@ class PaymentController extends Controller
             'payment_method'    => 'wechat',
             'payment_no'    => $data->transaction_id,
         ]);
+
+        $this->afterPaid($order);
+
         return app('wechat')->success();
+    }
+
+    protected function afterPaid(Order $order)
+    {
+        event(new OrderPaid($order));
     }
 }
