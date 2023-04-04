@@ -8,14 +8,14 @@ use App\Exceptions\CouponCodeUnavailableException;
 
 class CouponCodesController extends Controller
 {
-    public function show($code)
+    public function show($code, Request $request)
     {
         // 判断优惠券是不存在
         if(!$record = CouponCode::where('code', $code)->first()) {
             throw new CouponCodeUnavailableException('优惠券不存在');
         }
 
-        $recode->checkAvailable();
+        $recode->checkAvailable($request->user());
 
         return $recode;
     }
